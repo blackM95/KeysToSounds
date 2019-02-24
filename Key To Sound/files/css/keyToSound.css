@@ -1,0 +1,67 @@
+*{
+  border:0;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+#myCanvas{
+  background: rgba(255, 255, 255, 0);
+  width:100%;
+  height:100%;
+}
+html,body{
+  width:100%;
+  height:100%;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+.info{
+  position: absolute;
+top: 85%;
+left: 50%;
+transform: translate(-50%, -50%);
+color:rgb(201, 52, 52);
+}
+
+.button{
+  margin-left: 15px;
+  height:auto;
+  width:150px;
+  cursor: pointer;
+  border:3px solid rgb(255, 0, 0);
+  border-radius: 30px;
+  background:rgb(190, 58, 58);
+  line-height: 5vh;
+outline: none;
+  color:rgb(176, 177, 199);
+}
+.button:hover{
+  background:rgb(247, 121, 66);
+  color:rgb(28, 0, 255);
+  border:3px solid rgb(244, 76, 4);
+}
+.but2{
+  position: absolute;
+top: 85%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+#but2{display:none;
+  height:auto;
+  width:150px;
+  cursor: pointer;
+  border:3px solid rgb(255, 0, 0);
+  border-radius: 30px;
+  background:rgb(190, 58, 58);
+  line-height: 5vh;
+  float:right;
+  color:rgb(176, 177, 199);
+  outline: none;
+}
+#but2:hover{
+  background:rgb(247, 121, 66);
+  color:rgb(28, 0, 255);
+  border:3px solid rgb(244, 76, 4);
+}

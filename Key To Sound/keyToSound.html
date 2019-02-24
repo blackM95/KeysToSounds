@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Key To Sound</title>
+  <script type="text/javascript" src="files/js/lib/paper.js"></script>
+  <link rel="stylesheet" href="files/css/keyToSound.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js"> </script>
+  <script type="text/paperscript" canvas="myCanvas">
+    var keys = {
+    q: {
+      sound: new Howl({
+        src: ['sounds/bubbles.mp3'],
+      }),
+      color: 'rgb(26, 187, 156)',
+      background:'rgba(26, 187, 156, 0.41)',
+    },
+    w: {
+      sound: new Howl({
+        src: ['sounds/clay.mp3'],
+      }),
+      color: 'rgb(40, 198, 41)',
+      background:'rgba(40, 198, 41, 0.41)',
+
+    },
+    e: {
+      sound: new Howl({
+        src: ['sounds/confetti.mp3'],
+      }),
+      color: 'rgb(52, 152, 219)',
+      background:'rgba(52, 152, 219, 0.41)',
+
+    },
+    r: {
+      sound: new Howl({
+        src: ['sounds/corona.mp3'],
+      }),
+      color: 'rgb(255, 255, 255)',
+      background:'rgb(0, 0, 0)',
+
+    },
+    t: {
+      sound: new Howl({
+        src: ['sounds/dotted-spiral.mp3'],
+      }),
+      color: 'rgb(0, 0, 0)',
+      background:'rgba(255, 255, 255, 1)',
+
+    },
+    y: {
+      sound: new Howl({
+        src: ['sounds/flash-1.mp3'],
+      }),
+      color: 'rgb(65, 0, 122)',
+      background:'rgba(65, 0, 122, 0.41)',
+
+    },
+    u: {
+      sound: new Howl({
+        src: ['sounds/flash-2.mp3'],
+      }),
+      color: 'rgb(0, 168, 71)',
+      background:'rgba(0, 168, 71, 0.41)',
+
+    },
+    i: {
+      sound: new Howl({
+        src: ['sounds/flash-3.mp3'],
+      }),
+      color: 'rgb(41, 128, 185)',
+      background:'rgba(41, 128, 185, 0.41)',
+
+    },
+    o: {
+      sound: new Howl({
+        src: ['sounds/glimmer.mp3'],
+      }),
+      color: 'rgb(142, 68, 173)',
+      background:'rgba(142, 68, 173, 0.41)',
+
+    },
+    p: {
+      sound: new Howl({
+        src: ['sounds/moon.mp3'],
+      }),
+      color: 'rgb(0, 36, 73)',
+      background:'rgba(0, 36, 73, 0.41)',
+    },
+    a: {
+      sound: new Howl({
+        src: ['sounds/pinwheel.mp3'],
+      }),
+      color: 'rgb(255, 252, 0)',
+      background:'rgba(255, 252, 0, 0.31)',
+    },
+    s: {
+      sound: new Howl({
+        src: ['sounds/piston-1.mp3'],
+      }),
+      color: 'rgb(218, 102, 0)',
+      background:'rgba(218, 102, 0, 0.41)',
+    },
+    d: {
+      sound: new Howl({
+        src: ['sounds/piston-2.mp3'],
+      }),
+      color: 'rgb(255, 24, 0)',
+      background:'rgba(255, 24, 0, 0.41)',
+    },
+    f: {
+      sound: new Howl({
+        src: ['sounds/prism-1.mp3'],
+      }),
+      color: 'rgb(152, 219, 223)',
+      background:'rgba(152, 219, 223, 0.51)',
+    },
+    g: {
+      sound: new Howl({
+        src: ['sounds/prism-2.mp3'],
+      }),
+      color: 'rgb(244, 156, 18)',
+      background:'rgba(244, 156, 18, 0.41)',
+    },
+    h: {
+      sound: new Howl({
+        src: ['sounds/prism-3.mp3'],
+      }),
+      color: 'rgb(210, 84, 0)',
+      background:'rgba(210, 84, 0, 0.41)',
+    },
+    j: {
+      sound: new Howl({
+        src: ['sounds/splits.mp3'],
+      }),
+      color: 'rgb(26, 187, 156)',
+      background:'rgba(26, 187, 156, 0.41)',
+    },
+    k: {
+      sound: new Howl({
+        src: ['sounds/squiggle.mp3'],
+      }),
+      color: 'rgb(46, 204, 113)',
+      background:'rgba(46, 204, 113, 0.41)',
+    },
+    l: {
+      sound: new Howl({
+        src: ['sounds/strike.mp3'],
+      }),
+      color: 'rgb(52, 152, 219)',
+      background:'rgba(52, 152, 219, 0.41)',
+    },
+    z: {
+      sound: new Howl({
+        src: ['sounds/suspension.mp3'],
+      }),
+      color: 'rgb(155, 89, 182)',
+      background:'rgba(155, 89, 182, 0.41)',
+    },
+    x: {
+      sound: new Howl({
+        src: ['sounds/timer.mp3'],
+      }),
+      color: 'rgb(23, 57, 91)',
+      background:'rgba(23, 57, 91, 0.41)',
+    },
+    c: {
+      sound: new Howl({
+        src: ['sounds/ufo.mp3'],
+      }),
+      color: 'rgb(22, 159, 132)',
+      background:'rgba(22, 159, 132, 0.41)',
+    },
+    v: {
+      sound: new Howl({
+        src: ['sounds/veil.mp3'],
+      }),
+      color: 'rgb(1, 98, 42)',
+      background:'rgba(1, 98, 42, 0.41)',
+    },
+    b: {
+      sound: new Howl({
+        src: ['sounds/wipe.mp3'],
+      }),
+      color: 'rgb(41, 185, 116)',
+      background: 'rgba(41, 185, 116, 0.41)',
+    },
+    n: {
+      sound: new Howl({
+        src: ['sounds/zig-zag.mp3'],
+      }),
+      color: 'rgb(142, 68, 173)',
+      background:'rgba(142, 68, 173, 0.41)',
+    },
+    m: {
+      sound: new Howl({
+        src: ['sounds/moon.mp3'],
+      }),
+      color: 'rgb(42, 133, 224)',
+      background: 'rgba(42, 133, 224, 0.50)',
+    },
+  };
+  var figures = [];
+
+  function onKeyDown(e) {
+    if (keys[e.key]) {
+      var max = new Point(view.size.width, view.size.height);
+      var random = Point.random();
+      var point = max * random;
+      var fig = new Path.Rectangle(point, new Point(500, 500));
+      var fig1 = new Path.Circle(point, 400);
+      var canvasLayer = document.getElementById('myCanvas');
+  if((e.key.charCodeAt(0))%2 ==0){
+      fig1.fillColor = keys[e.key].color;
+      keys[e.key].sound.play();
+      figures.push(fig1);
+      canvasLayer.style.background = keys[e.key].background;
+
+                                  }
+    else{
+    fig.fillColor = keys[e.key].color;
+    keys[e.key].sound.play();
+    figures.push(fig);
+    canvasLayer.style.background = keys[e.key].background;
+
+        }
+                        }
+  }
+
+  function onFrame(e) {
+    for (var i = 0; i < figures.length; i++) {
+      figures[i].scale(0.92);
+      figures[i].fillColor.hue += 1;
+      if(figures[i].area < 1){
+        figures[i].remove();
+        figures.splice(i, 1);
+        console.log(figures);
+      }
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <canvas id="myCanvas" resize></canvas>
+  <div class="info">
+    <h1> Hi, <br>Press any key(a-z) to play different sounds.<button type="button" class="button">Hide Me</button></h1>
+
+  </div>
+  <div class="but2">
+    <button type="button" id="but2">Bring me back</button>
+  </div>
+  <script type="text/javascript" src="files/js/keyToSound.js">
+
+  </script>
+</body>
+
+</html>
